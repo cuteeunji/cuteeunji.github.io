@@ -337,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   right: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .qbootstrap-cover,
@@ -349,7 +349,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
   .video-hero {
-    heifght: inherit;
+    height: inherit;
   }
 }
 .qbootstrap-cover .display-t,
@@ -697,7 +697,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
 }
 #qbootstrap-countdown .countdown {
   margin-bottom: 0;
