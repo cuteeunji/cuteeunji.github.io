@@ -151,7 +151,7 @@
 			(혼잡할 수 있으니 대중교통 이용 바랍니다.) <br/>
 		</p>
 		<div id="map" style="height:300px; margin-top: 25px; margin-bottom: 25px;"></div>
-		<a href="javascript:void(0)" onclick="kakao_navi();">
+		<a href="javascript:kakao_navi();">
 			카카오 내비
 		</a>
 	</div>
@@ -367,6 +367,8 @@
 
 </script>
 <!-- 카카오내비 목적지 설정 및 실행 -->
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js"
+  integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
 <script type="text/javascript">
     Kakao.init('b5051d4b026ab8cba99a63e9d8c6031f');
     function kakao_navi() {
