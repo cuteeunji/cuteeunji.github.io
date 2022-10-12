@@ -1694,3 +1694,68 @@ h1, h2, h3, h4, h5, h6 {
 
 /*# sourceMappingURL=style.css.map */
 
+button {
+  color: #444444;
+  background: #F3F3F3;
+  border: 1px #DADADA solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none;
+}
+
+button:hover {
+  border: 1px #C6C6C6 solid;
+  box-shadow: 1px 1px 1px #EAEAEA;
+  color: #333333;
+  background: #F7F7F7;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 1px #DFDFDF;   
+}
+
+button.yellow {
+  color: #ffea00;
+  background: #ffea00;
+  border: 1px #DADADA solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none;
+}
+
+button.yellow:hover {
+  border: 1px #C6C6C6 solid;
+  box-shadow: 1px 1px 1px #EAEAEA;
+  color: #333333;
+  background: #F7F7F7;
+}
+
+button.yellow:active {
+  box-shadow: inset 1px 1px 1px #DFDFDF;   
+}
+
+button.blue {
+  color: #3589fe;
+  background: #3589fe;
+  border: 1px #DADADA solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none;
+}
+
+button.blue:hover {
+  border: 1px #C6C6C6 solid;
+  box-shadow: 1px 1px 1px #EAEAEA;
+  color: #333333;
+  background: #F7F7F7;
+}
+
+button.blue:active {
+  box-shadow: inset 1px 1px 1px #DFDFDF;   
+}
