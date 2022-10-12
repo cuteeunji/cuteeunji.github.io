@@ -128,7 +128,7 @@
 			<br/>| 오시는 길
 		</p>
 		<p style="text-align: left;margin-top: 20px; font-size: 16px;">
-			<span style="color: rgba(0,0,0,0.7)">장소</span><br/>
+			<span style="color: rgba(0,0,0,0.7)">주 소</span><br/>
 			서울시 마포구 양화로 87 (구, 서교동 378-7)<br/>
 			전화: 02. 335. 5400<br/>
 		</p>
@@ -137,7 +137,7 @@
 			2,6호선 합정역 2번 출구 도보 4분
 		</p>
 		<p style="text-align: left; font-size: 16px;">
-			<span style="color: rgba(0,0,0,0.7)">버스</span><br/>
+			<span style="color: rgba(0,0,0,0.7)">버 스</span><br/>
 			서교동 / 우리은행서교동지점 / 합정역 하차<br>
 			- 파랑(간선): 271A, 921, 602, 603, 604, 761<br>
 			- 초록(지선): 5712, 5714, 6712, 6716, 7612, 7734, 7739,<br>
@@ -146,11 +146,40 @@
 			- 빨강(광역): 1000, 1100, 1101, 1200, 1300, 1301, 1302, 1601, 3100<br>
 		</p>
 		<p style="text-align: left; font-size: 16px;">
-			<span style="color: rgba(0,0,0,0.7)">주차</span><br/>
+			<span style="color: rgba(0,0,0,0.7)">주 차</span><br/>
 			웨딩시그니처 건물 정문에서 주차 안내를 받으시기 바랍니다.<br>
 			(혼잡할 수 있으니 대중교통 이용 바랍니다.) <br/>
 		</p>
 		<div id="map" style="height:300px; margin-top: 25px; margin-bottom: 25px;"></div>
+		<button class="w-btn w-btn-yellow" type="button">
+			<a href="javascript:void(0)" onclick="kakao_navi();">
+			카카오 내비
+			</a>
+		</button>
+		<button class="w-btn w-btn-red" type="button">
+			T MAP
+		</button>
+
+	</div>
+</div>
+
+<br/>
+<div class="row animate-box" style="height: auto; width: 100%; margin: auto; border:0.7px solid rgba(82, 81, 81, 0.1);"></div>
+
+<div class="row animate-box">
+	<div style="height: auto; width: 80%; margin: auto;">
+		<p style="font-size: 18px; margin-bottom: 20px; color: rgba(0, 0, 0, 0.8)">
+			<br/>| 마음 전하실 곳
+		</p>
+		<p style="text-align: left;margin-top: 20px; font-size: 16px;">
+			<span style="color: rgba(0,0,0,0.7)">신랑</span><br/>
+			우리은행 <br/>
+			우리은행<br/>
+		</p>
+		<p style="text-align: left; font-size: 16px;">
+			<span style="color: rgba(0,0,0,0.7)">신부</span><br/>
+			우리은행
+		</p>
 	</div>
 </div>
 
@@ -342,6 +371,17 @@
 
   }
 
+</script>
+<script type="text/javascript">
+	Kakao.init('b5051d4b026ab8cba99a63e9d8c6031f');
+	function kakao_navi(){
+		Kakao.Navi.start({
+			name: "웨딩시그니처",
+			x: 126.9173249,
+			y: 37.5526889,
+			coordType:'wgs84'
+		});
+	}
 </script>
 </body>
 </html>
