@@ -151,15 +151,9 @@
 			(혼잡할 수 있으니 대중교통 이용 바랍니다.) <br/>
 		</p>
 		<div id="map" style="height:300px; margin-top: 25px; margin-bottom: 25px;"></div>
-		<button class="w-btn w-btn-yellow" type="button">
-			<a href="javascript:void(0)" onclick="kakao_navi();">
+		<a href="javascript:void(0)" onclick="kakao_navi();">
 			카카오 내비
-			</a>
-		</button>
-		<button class="w-btn w-btn-red" type="button">
-			T MAP
-		</button>
-
+		</a>
 	</div>
 </div>
 
@@ -372,16 +366,17 @@
   }
 
 </script>
+<!-- 카카오내비 목적지 설정 및 실행 -->
 <script type="text/javascript">
-	Kakao.init('b5051d4b026ab8cba99a63e9d8c6031f');
-	function kakao_navi(){
-		Kakao.Navi.start({
-			name: "웨딩시그니처",
-			x: 126.9173249,
-			y: 37.5526889,
-			coordType:'wgs84'
-		});
-	}
+    Kakao.init('b5051d4b026ab8cba99a63e9d8c6031f');
+    function kakao_navi() {
+        Kakao.Navi.start({
+            name:"웨딩시그니처",
+            x:126.9173249,
+            y:37.5526889,
+            coordType:'wgs84'
+        })
+    }
 </script>
 </body>
 </html>
