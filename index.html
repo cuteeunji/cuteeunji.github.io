@@ -196,13 +196,13 @@
 		<p style="text-align: left;margin-top: 20px; font-size: 16px;">
 			<span style="color: rgba(0,0,0,0.7)">신랑</span><br/>
 			우리은행 1002-743-607058 &nbsp 이형석 &nbsp&nbsp
-			<button onclick="copy('1002-743-607058')">복사하기</button> &nbsp
+			<button onclick="accountNumberCopy('1002-743-607058')">복사하기</button> &nbsp
 			<a href="https://qr.kakaopay.com/Ej8j7bPZe"><img src="images/kakaopay.png"></a><br/>
 		</p>
 		<p style="text-align: left; font-size: 16px;">
 			<span style="color: rgba(0,0,0,0.7)">신부</span><br/>
 			우리은행 1002-638-354835 &nbsp 여은지 &nbsp&nbsp
-			<button onclick="copy('1002-638-354835')">복사하기</button> &nbsp
+			<button onclick="accountNumberCopy('1002-638-354835')">복사하기</button> &nbsp
 			<a href="https://qr.kakaopay.com/Ej8FJhej3"><img src="images/kakaopay.png"></a><br/>
 		</p>
 	</div>
@@ -409,6 +409,13 @@
             y:37.5526889,
             coordType:'wgs84'
         })
+    }
+</script>
+<script>
+    function accountNumberCopy(accountNumber) {
+        window.navigator.clipboard.writeText(accountNumber).then(() => {
+        alert("계좌번호가 복사되었습니다.\n" + accountNumber);
+      });
     }
 </script>
 </body>
