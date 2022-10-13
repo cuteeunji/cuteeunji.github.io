@@ -1717,8 +1717,8 @@ button:active {
 }
 
 button.yellow {
-  color: #ffea00;
-  background: #ffea00;
+  color: #fae202;
+  background: #fae202;
   border: 1px #DADADA solid;
   padding: 5px 10px;
   border-radius: 2px;
@@ -1735,27 +1735,5 @@ button.yellow:hover {
 }
 
 button.yellow:active {
-  box-shadow: inset 1px 1px 1px #DFDFDF;   
-}
-
-button.blue {
-  color: #3589fe;
-  background: #3589fe;
-  border: 1px #DADADA solid;
-  padding: 5px 10px;
-  border-radius: 2px;
-  font-weight: bold;
-  font-size: 9pt;
-  outline: none;
-}
-
-button.blue:hover {
-  border: 1px #C6C6C6 solid;
-  box-shadow: 1px 1px 1px #EAEAEA;
-  color: #333333;
-  background: #F7F7F7;
-}
-
-button.blue:active {
   box-shadow: inset 1px 1px 1px #DFDFDF;   
 }
