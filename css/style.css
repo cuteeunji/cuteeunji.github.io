@@ -13,6 +13,10 @@
 *	Edit this section
 *
 * ======================================================= */
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "ArnoPro Display", Arial, sans-serif;
   font-weight: 400;
