@@ -1584,6 +1584,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .social li {
   list-style: none;
+  padding-left: 0;
   padding: 0;
   margin: 0;
   display: inline-block;
@@ -1617,6 +1618,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .social li a:hover {
   background: #393e46 !important;
+}
+.social ul {
+  list-style: none;
+  padding-left: 0;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
 }
 .social.social-box a {
   background: #6f584a;
