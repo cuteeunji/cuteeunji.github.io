@@ -1789,18 +1789,6 @@ li {
           font-size: 20px;
       }
 
-          .call dl dt span.blue {
-              font-weight: 400;
-              color: #121329;
-              margin-right: 5%;
-          }
-
-          .call dl dt span.pink {
-              font-weight: normal;
-              color: #121329;
-              margin-right: 5%;
-          }
-
       .call dl dd {
           padding: 0px 10px;
           width: 12%;
@@ -1951,3 +1939,70 @@ li {
   .swiper-button-prev.swiper-button-white {
       --swiper-navigation-color: #333;
   }
+
+
+
+.g-cont{padding:30px 15px;}
+.g-cont ul{}
+.g-cont ul li{margin:0 0 10px;}
+.g-cont ul li input{border:0;background:#fff;}
+.g-cont ul li textarea{border:0;background:#fff;height: 100px;resize: none;}
+.g-cont .name{font-family: 'Jeju Myeongjo', serif; float:left; width:100%;}
+
+.g-cont .msg{font-family: 'Jeju Myeongjo', serif;}
+.g-cont .msg .form-control{word-break: break-all;}
+.g-cont .msg textarea{height: 100px;resize: none;}
+.g-cont .btn{background:#595959;color:#ffffff;font-size:13px;/* font-weight:bold; */display:block;}
+
+
+.guestbook .cont{/* background:url(/guestbook/images/bg-gb.png) repeat; */background: #fff;margin:8px 0px 0;margin-top:0;}
+.guestbook .cont li{padding:15px;border-bottom: 1px dotted #ddd;text-align:left;color: #333;}
+.guestbook .cont li:last-child{border-bottom:0;}
+.guestbook .cont,
+.guestbook .cont a{color: #bfbfbf;font-size:11px;line-height:16px;}
+.guestbook .cont .name{display:inline-block;padding-right:3px;color: #333;/* font-weight: bold; */font-family: 'Noto_b' !important;}
+.guestbook .cont .name:after{content: " | "; opacity:0.5}
+
+.guestbook .cont .date{display:inline-block; padding-left:3px;}
+.guestbook .cont .memo{/* font-weight:bold; */display:block;padding-top: 10px;word-break: break-all;color: #727272;}
+.guestbook .cont .del {margin-top: 10px;}
+.guestbook .cont .del i {color: #333;}
+.guestbook .cont .write{text-align:right;}
+
+.delform{/* margin-top:10px; */}
+.delform .delmsg{/* margin-bottom:5px; */color:#939393;font-size: 13px;}
+
+.ui-dialog {
+  /* width: 90% !important;
+  display: inline-block !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  height: 196px !important; */
+  padding: 0;
+  width: 90% !important;
+  height: auto !important;
+  border-radius: 10px;
+}
+
+
+.ui-dialog-titlebar {background-color: #333; color: #fff; border-radius: 0; display: none;}
+.ui-dialog-title {font-size: 16px; font-weight: normal;}
+#dialog-msg {height: 120px !important;}
+#dialog-msg span.msg {font-size: 15px;vertical-align: top;font-family: 'Noto_M' !important;color: #555;}
+.ui-dialog .ui-dialog-buttonpane button {
+  /* border-radius: 20px; */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  margin: 0px 5px 0px 5px;
+  /* border-radius: 20px; */
+}
+.ui-button-text-only .ui-button-text {padding: .2em 1em;background-color: #505050;color: #fff;font-size: 12px;padding: 6px 15px;border-radius: 25px;}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {float: none; text-align: center;}
+.ui-dialog .ui-dialog-buttonpane {border:none; margin-top: 0;}
+.ui-widget-content {border: none;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: #333;
+  border: none;
+}
