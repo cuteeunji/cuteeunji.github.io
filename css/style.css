@@ -1942,29 +1942,29 @@ li {
 
 
 
-.g-cont{padding:30px 15px;}
+.g-cont{padding:20px 5px;}
 .g-cont ul{}
 .g-cont ul li{margin:0 0 10px;}
-.g-cont ul li input{border:0;background:#fff;}
+.g-cont ul li input{border:0;background:#fff;height: 40px;}
 .g-cont ul li textarea{border:0;background:#fff;height: 100px;resize: none;}
-.g-cont .name{font-family: 'Jeju Myeongjo', serif; float:left; width:100%;}
+.g-cont .name{font-family: 'Noto_b'; float:left; width:100%;}
 
-.g-cont .msg{font-family: 'Jeju Myeongjo', serif;}
+.g-cont .msg{font-family: 'Noto_b';}
 .g-cont .msg .form-control{word-break: break-all;}
 .g-cont .msg textarea{height: 100px;resize: none;}
-.g-cont .btn{background:#595959;color:#ffffff;font-size:13px;/* font-weight:bold; */display:block;}
+.g-cont .btn{font-family: 'Noto_b'; background:#595959;color:#ffffff;font-size:13px;/* font-weight:bold; */display:block;}
 
 
 .guestbook .cont{/* background:url(/guestbook/images/bg-gb.png) repeat; */background: #fff;margin:8px 0px 0;margin-top:0;}
 .guestbook .cont li{padding:15px;border-bottom: 1px dotted #ddd;text-align:left;color: #333;}
 .guestbook .cont li:last-child{border-bottom:0;}
 .guestbook .cont,
-.guestbook .cont a{color: #bfbfbf;font-size:11px;line-height:16px;}
-.guestbook .cont .name{display:inline-block;padding-right:3px;color: #333;/* font-weight: bold; */font-family: 'Noto_b' !important;}
-.guestbook .cont .name:after{content: " | "; opacity:0.5}
+.guestbook .cont a{color: #bfbfbf;font-size:11px;line-height:20px;}
+.guestbook .cont .name{display:inline-block;padding-right:10px;color: #333; font-size:15px; font-weight: bold; font-family: 'Noto_b';margin-bottom: 0px;}
+.guestbook .cont .name:after{content: "| "; opacity:0.5;padding-left:10px;}
 
-.guestbook .cont .date{display:inline-block; padding-left:3px;}
-.guestbook .cont .memo{/* font-weight:bold; */display:block;padding-top: 10px;word-break: break-all;color: #727272;}
+.guestbook .cont .date{display:inline-block; padding-left:10px;font-family: 'Noto_b'; margin-bottom: 0px;text-align: right;}
+.guestbook .cont .memo{/* font-weight:bold; */display:block;word-break: break-all;color: #727272; font-size:14px; white-space: pre-line;font-family: 'Noto_b';margin-bottom: 0px;}
 .guestbook .cont .del {margin-top: 10px;}
 .guestbook .cont .del i {color: #333;}
 .guestbook .cont .write{text-align:right;}

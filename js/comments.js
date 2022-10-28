@@ -18,15 +18,15 @@ function loadComments(auth) {
   })
     .then((res) => res.json())
     .then((comments) => {
-      let $commentList = document.getElementById("comment-list");
+      let commentList = document.getElementById("comment-list");
       for (let i in comments) {
-        $commentList.innerHTML += `
+        commentList.innerHTML += `
         <li>
           <p class="name">${comments[i].title}</p>
           <p class="date">${comments[i].created_at
             .replace("T", "  ")
             .replace("Z", "")
-            .slice(0, -3)}</p>
+            .slice(0, -9)}</p>
           <p class="memo">${comments[i].body}</p>
         </li>`;
       }
@@ -34,13 +34,13 @@ function loadComments(auth) {
 }
 
 function registerComment(auth) {
-  let $commentRegistration = document.getElementById("comment-registration");
-  $commentRegistration.addEventListener("click", () => {
-    let $nickname = document.getElementById("name");
-    let $commentInput = document.getElementById("msg");
-    if (!$nickname.value) {
+  let commentRegistration = document.getElementById("comment-registration");
+  commentRegistration.addEventListener("click", () => {
+    let name = document.getElementById("comment-name");
+    let msg = document.getElementById("comment-msg");
+    if (!name.value) {
       alert("이름을 입력해주세요!");
-    } else if (!$commentInput.value) {
+    } else if (!msg.value) {
       alert("축하 메시지를 입력해주세요!");
     } else {
       fetch(
@@ -52,14 +52,24 @@ function registerComment(auth) {
             Authorization: "token " + auth,
           },
           body: JSON.stringify({
-            title: $nickname.value,
-            body: $commentInput.value,
+            title: name.value,
+            body: msg.value,
           }),
         }
-      ).then(() => {
-        sendMail($nickname.value, $commentInput.value);
-        $nickname.value = "";
-        $commentInput.value = "";
+      ).then((res) => res.json())
+      .then((comment) => {
+        name.value = "";
+        msg.value = "";
+        let commentList = document.getElementById("comment-list");
+        commentList.innerHTML = `
+        <li>
+          <p class="name">${comment.title}</p>
+          <p class="date">${comment.created_at
+            .replace("T", "  ")
+            .replace("Z", "")
+            .slice(0, -9)}</p>
+          <p class="memo">${comment.body}</p>
+        </li>` + commentList.innerHTML;
       });
     }
   });
