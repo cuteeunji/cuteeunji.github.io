@@ -1710,9 +1710,16 @@ ol, ul {
   animation-fill-mode: both;
 }
 
+button:hover {
+  border: 0px #ffffff00 solid;
+  box-shadow: 0px 0px 0px #ffffff00;
+  color: #ffffff00;
+  background: #ffffff00;
+}
+
 /*# sourceMappingURL=style.css.map */
 
-button {
+button.gray {
   color: #444444;
   background: #F3F3F3;
   border: 1px #DADADA solid;
@@ -1723,14 +1730,14 @@ button {
   outline: none;
 }
 
-button:hover {
+button.gray:hover {
   border: 1px #C6C6C6 solid;
   box-shadow: 1px 1px 1px #EAEAEA;
   color: #333333;
   background: #F7F7F7;
 }
 
-button:active {
+button.gray:active {
   box-shadow: inset 1px 1px 1px #DFDFDF;   
 }
 
