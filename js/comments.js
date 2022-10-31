@@ -31,13 +31,13 @@ function loadComments(auth) {
       })
         .then((res) => res.json())
         .then((comments) => {
+          $('#guest_more_btn').hide();
           let commentList = document.getElementById("comment-list");
           for (let i in comments) {
-            var display = "none";
-            $('#guest_more_btn').show()
-            if (i < 5) {
-              display = "block";
-              $('#guest_more_btn').hide()
+            var display = "block";
+            if (i >= 5) {
+              display = "none";
+              $('#guest_more_btn').show();
             }
             commentList.innerHTML += `
             <li class="comment" style="display: ${display}">
