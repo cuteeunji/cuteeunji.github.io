@@ -1318,36 +1318,7 @@ ol, ul {
   margin-bottom: 0;
 }
 
-.gallery {
-  margin-bottom: 30px;
-}
-.gallery .gallery-img {
-  width: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 25px;
-}
-.gallery .gallery-img img {
-  position: relative;
-  max-width: 100%;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.9s;
-  -o-transition: 0.9s;
-  transition: 0.9s;
-}
-.gallery .gallery-img:hover img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-}
+
 
 #qbootstrap-press {
   background: #f4f4f4;
