@@ -1922,11 +1922,10 @@ li {
 
 .g-cont{padding:20px 5px;}
 .g-cont ul{font-family: 'Jeju Myeongjo', serif;}
-.g-cont ul li{margin:0 0 10px;}
+.g-cont ul li{font-family: 'Jeju Myeongjo', serif; margin:0 0 10px;}
 .g-cont ul li input{border:0;background:#fff;height: 40px;}
 .g-cont ul li textarea{border:0;background:#fff;height: 100px;resize: none;}
 .g-cont .name{float:left; width:100%;}
-.g-cont .pwd{font-family: 'Jeju Myeongjo', serif;}
 
 .g-cont .msg{font-family: 'Jeju Myeongjo', serif;}
 .g-cont .msg .form-control{word-break: break-all;}
