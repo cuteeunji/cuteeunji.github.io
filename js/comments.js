@@ -89,7 +89,7 @@ function registerComment() {
         pwd.value = "";
         let commentList = document.getElementById("comment-list");
         commentList.innerHTML = `
-        <li class="comment" id="comment_${comments[i].number}">
+        <li class="comment" id="comment_${comment.number}">
           <p class="name">${comment.title}</p>
           <p class="date">${comment.created_at
             .replace("T", "  ")
