@@ -1921,11 +1921,12 @@ li {
 
 
 .g-cont{padding:20px 5px;}
-.g-cont ul{}
+.g-cont ul{font-family: 'Jeju Myeongjo', serif;}
 .g-cont ul li{margin:0 0 10px;}
 .g-cont ul li input{border:0;background:#fff;height: 40px;}
 .g-cont ul li textarea{border:0;background:#fff;height: 100px;resize: none;}
-.g-cont .name{font-family: 'Jeju Myeongjo', serif; float:left; width:100%;}
+.g-cont .name{float:left; width:100%;}
+.g-cont .pwd{font-family: 'Jeju Myeongjo', serif;}
 
 .g-cont .msg{font-family: 'Jeju Myeongjo', serif;}
 .g-cont .msg .form-control{word-break: break-all;}
@@ -1946,7 +1947,7 @@ li {
 
 .guestbook .cont .date{display:inline-block; padding-left:10px;font-family: 'Jeju Myeongjo', serif; margin-bottom: 0px;text-align: right;}
 .guestbook .cont .memo{/* font-weight:bold; */display:block;word-break: break-all;color: #727272; font-size:14px; white-space: pre-line;font-family: 'Jeju Myeongjo', serif;margin-bottom: 0px;}
-.guestbook .cont .del {margin-top: 10px;}
+.guestbook .cont .del {margin-top: 10px; margin-bottom: 0;}
 .guestbook .cont .del i {color: #333;}
 .guestbook .cont .write{text-align:right;}
 
