@@ -107,7 +107,7 @@
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
 		    $('html, body').animate({
-		        scrollTop: $('[data-section="' + section + '"]').offset()
+		        scrollTop: $('[data-section="' + section + '"]').offset().top
 		    }, 500);
 
 		    if ( navbar.is(':visible')) {
