@@ -139,7 +139,7 @@ var guestbook_del = function(issue_num, issue_pwd){
       var id = '#comment_' + issue_num
       $(id).remove();
     });
-  } else {
+  } else if (password != null) {
     alert('비밀번호가 틀렸어요!')
   }
 }
